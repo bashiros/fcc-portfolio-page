@@ -1,0 +1,182 @@
+/**********************************
+GENERAL
+***********************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato,"Open Sans",sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.wrapper {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+section {
+  padding: 5px 5px;
+}
+ul{
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-family:  "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.75em;
+}
+
+/**********************************
+HEADING & NAVIGATION
+***********************************/
+
+header {
+  background-color: rgb(224, 62, 37);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+#logo {
+  text-align: center;
+  margin-top: 25px;
+}
+
+#logo h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 1.75em;
+  margin: 0;
+}
+#logo h2 {
+  font-size: 1.25em;
+  margin: -5px 0 0 0;
+  font-weight: normal;
+}
+nav {
+  background-color: rgb(147, 34, 16);
+  margin-top: 20px;
+}
+
+nav ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+nav a {
+  font-weight: 900;
+  text-decoration: none;
+  padding: 15px 10px;
+  color: #fff;
+}
+
+nav a.active, nav a:hover {
+  color: rgb(74, 13, 3);
+}
+
+
+/**********************************
+HOME PAGE
+***********************************/
+
+#home {
+  background-color: rgb(34, 156, 208);
+  background-image: url("https://c2.staticflickr.com/8/7504/16258492451_42a357bfb3_h.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/**********************************
+ABOUT PAGE
+***********************************/
+
+#about {
+  background-color: rgb(29, 199, 157);
+}
+
+/**********************************
+PORTFOLIO PAGE
+***********************************/
+
+#portfolio {
+  background-color: rgb(65, 199, 81);
+}
+.portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.proj-thumb {
+  border: 2px solid white;
+  margin: 10px 15px;
+}
+.proj-thumb h3 {
+  margin: 5px 5px;
+}
+.proj-thumb p {
+  margin: 5px 5px;
+}
+
+/**********************************
+CONTACT PAGE
+***********************************/
+
+#contact {
+  background-color: rgb(213, 233, 45);
+}
+
+/**********************************
+FOOTER
+***********************************/
+
+
+
+/**********************************
+MEDIA QURIES
+***********************************/
+
+@media screen and (min-width: 769px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 5px solid rgb(147, 34, 16);
+    align-items: baseline;;
+    padding-bottom: 20px;
+  }
+
+  #logo {
+    text-align: left;
+  }
+  #logo h1 {
+    font-size: 2.5em;
+  }
+  #logo h2 {
+    font-size: 1em;
+  }
+  nav {
+    background: none;
+  }
+  nav a {
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+
+}
