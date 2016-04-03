@@ -15,7 +15,11 @@ body {
 .wrapper {
   max-width: 970px;
   margin: 0 auto;
-  padding: 0 5%;
+  padding: 40px 0px;
+}
+.title {
+  text-align: center;
+  text-transform: uppercase;
 }
 section {
   padding: 5px 5px;
@@ -139,6 +143,65 @@ CONTACT PAGE
 
 #contact {
   background-color: rgb(213, 233, 45);
+  background-image: url(https://snap-photos.s3.amazonaws.com/img-thumbs/960w/Y01VDYAX63.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+form {
+  max-width: 480px;
+  margin: 10px auto;
+  padding: 20px 20px;
+  background: rgba(245, 248, 249, 0.5);
+  border-radius: 8px;
+}
+
+input,
+textarea {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 1em;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  margin-bottom: 30px;
+  -webkit-transition: border 0.2s ease-in 0s;
+  -moz-transition: border 0.2s ease-in 0s;
+  transition: border 0.2s ease-in 0s;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+}
+
+input:focus, textarea:focus {
+  border-bottom: 0.25rem rgb(204, 49, 55) solid;
+  background-color: #fff;
+}
+
+.btn {
+  cursor: pointer;
+  font-size: 0.875em;
+  font-weight: 400;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+  width: 100%;
+  padding: 1em 1.25em;
+  margin-bottom: 1.5em;
+  border-radius: 5px;
+  background-color: rgb(19, 159, 184);
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+  -webkit-transition: background 0.2s ease-in 0s;
+  -moz-transition: background 0.2s ease-in 0s;
+  transition: background 0.2s ease-in 0s;
+}
+
+.btn:hover {
+  background-color: rgb(21, 232, 75);
 }
 
 /**********************************
@@ -174,6 +237,14 @@ MEDIA QURIES
   }
   nav a {
     font-size: 1.25em;
+  }
+
+  /*inline from buttons*/
+  .inln {
+    width: auto;
+  }
+  .btn + .btn {
+    margin-left: 1.5em;
   }
 }
 
