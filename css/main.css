@@ -34,7 +34,7 @@ img {
 
 h1 {
   font-family:  "Open Sans", sans-serif;
-  font-weight: 700;
+  font-weight: bold;
   font-size: 1.75em;
 }
 
@@ -119,16 +119,27 @@ PORTFOLIO PAGE
 
 #portfolio {
   background-color: rgb(65, 199, 81);
+  background-image: url(https://snap-photos.s3.amazonaws.com/img-thumbs/960w/C7MJR7LV7V.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 4.25em 0;
 }
 .portfolio-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 20px 20px;
+  background: rgba(245, 248, 249, 0.5);
+  border-radius: 8px;
 }
 
 .proj-thumb {
   border: 2px solid white;
   margin: 10px 15px;
+  flex-grow: 1;
+  flex-basis: 250px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.25);
 }
 .proj-thumb h3 {
   margin: 5px 5px;
@@ -136,6 +147,27 @@ PORTFOLIO PAGE
 .proj-thumb p {
   margin: 5px 5px;
 }
+
+#portfolio h1 {
+  color: #fff;
+}
+
+/*thumbnail hover effect*/
+.proj-thumb {
+  perspective: 250px;
+}
+
+.proj-thumb a img {
+  transition: 100ms;
+  transform: translateZ(0px);
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+}
+
+.proj-thumb a img:hover {
+  transform: translateZ(25px);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+}
+
 
 /**********************************
 CONTACT PAGE
@@ -168,6 +200,7 @@ textarea {
   width: 100%;
   height: auto;
   background-color: #e8eeef;
+  border-bottom: 0.25rem #e8eeef solid;
   color: #8a97a0;
   margin-bottom: 30px;
   -webkit-transition: border 0.2s ease-in 0s;
@@ -237,6 +270,9 @@ MEDIA QURIES
   }
   nav a {
     font-size: 1.25em;
+  }
+  h1 {
+    font-size: 3em;
   }
 
   /*inline from buttons*/
