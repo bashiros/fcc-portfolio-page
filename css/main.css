@@ -16,6 +16,8 @@ body {
   max-width: 970px;
   margin: 0 auto;
   padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
 }
 .title {
   text-align: center;
@@ -30,6 +32,16 @@ ul{
 
 img {
   width: 100%;
+}
+
+a[href*="http"] {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 2px solid #000;;
+}
+a[href*="http"]:hover {
+  color: #fff;
+  border-bottom: 2px solid #fff;
 }
 
 h1 {
@@ -111,6 +123,21 @@ ABOUT PAGE
 
 #about {
   background-color: rgb(29, 199, 157);
+  background-image: url(https://snap-photos.s3.amazonaws.com/img-thumbs/960w/SOMF2OHDZ1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  min-height: 600px;
+  padding: 4.25em 0;
+  display: flex;
+}
+
+.backdrop-whi {
+  padding: 20px 20px;
+  background: rgba(245, 248, 249, 0.5);
+  border-radius: 8px;
+  margin: auto;
 }
 
 /**********************************
